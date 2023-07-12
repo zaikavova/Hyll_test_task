@@ -1,0 +1,14 @@
+analyzer:
+  errors:
+    missing_required_param: warning
+    missing_return: error
+    invalid_annotation_target: ignore
+  exclude: [ '**.gr.dart','**.chopper.dart','lib/generated/**','lib/gen/**', '**.g.dart', '**.freezed.dart' ,'lib/assembly/json_serializable_converter/*']
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+linter:
+  rules:
+    - avoid_relative_lib_imports
+    - sort_constructors_first
